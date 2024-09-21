@@ -1,0 +1,427 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: work  sans;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient( #100f0f, #343535);
+    padding: 10px 20px;
+    
+}
+
+.nav{
+    height: 10%;
+    /* background: linear-gradient(to right, #9092ac, #9092ac); */
+    /* background-color: #c0c3c4; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.navle{
+    display: flex;
+    align-items: center;
+    gap:1px;
+}
+
+.navle h3{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Lucida Sans';
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    color: transparent;
+    -webkit-text-stroke: 0.2px white;
+    font-style: italic;
+}
+
+.color{
+    background: linear-gradient(to right, #5aa1d4, #a43d7b);
+    background-clip: text;
+    -webkit-background-clip: text;
+    
+}
+
+.color1{
+    background: linear-gradient(to right, #5aa1d4, #a43d7b);
+    background-clip: text;
+    -webkit-background-clip: text;  
+}
+
+.navle img{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+}
+
+.navce ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.navce li{
+    list-style: none;
+    font-size: 16px;
+    color: white;
+    transition: 0.5s all ease;
+    position: relative;
+}
+
+.navce li::after{
+    content: "";
+    height: 8%;
+    width: 0;
+    background: linear-gradient(to right, #b08383, #5ea6ca);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.navce li:hover{
+    transform: scale(1.2);
+}
+
+.navce li:hover::after{
+    width: 100%;
+}
+
+.navce li i {
+    font-size: 16px;
+}
+
+.navri{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search{
+    position: relative;
+
+}
+
+.search input{
+    padding: 8px 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #dde0e1;
+}
+
+.search i{
+    position: absolute;
+    left: 3%;
+    top: 25%;
+    color: #727070;
+    font-size: 18px;
+}
+
+.cart{
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+    color: white;
+    transition: 0.5s  all ease;
+}
+
+
+.dress{
+    margin-top: 10px;
+    height: 60%;
+    display: flex;
+    gap: 10px;
+}
+
+.dleft{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    background-image: url(https://media.gettyimages.com/id/957256814/photo/portrait-of-tattooed-young-man-with-black-t-shirt.jpg?s=612x612&w=0&k=20&c=lIQkWKxnsbVIVsQmDKkKuXhH3OtOpfS6i7mwMNKUf_4=);
+    background-size: cover;
+    background-position: center;
+}
+
+.lp h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    background-color: black;
+    padding: 7px 30px;
+    box-shadow: 0 0 10px white;
+    transition: 0.5s all ease;
+}
+
+.lp h2:hover{
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    transform: scale(1.1);
+}
+
+.ld h4{
+    margin-bottom: 17px;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    transition: 0.5s;
+}
+
+.ld h4:hover{
+    transform: scale(1.1);
+    color: red;
+}
+
+.ld h4 span{
+    font-size: 17px;
+}
+
+.ld a{
+    font-size: 25px;
+    text-decoration: none;
+    color: #689ac0;
+}
+
+.dright{
+    width: 80%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1492447216082-4726bf04d1d1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+
+.img{
+    height: 100%;
+    background-color: rgba(40, 39, 39, 0.527);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.img h1{
+    color: white;
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px white;
+}
+
+.img h1:hover{
+    background: linear-gradient(to right, #5aa1d4, #a43d7b);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transform: scale(1.1);
+}
+
+.img button{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.img button:hover{
+    box-shadow: 0 0 10px #87a4c6;
+    transform: scale(1.1);
+    background-color: black;
+    color: white;
+}
+
+.img button i{
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.bottom{
+    height: 30%;
+    /* background-color: blue; */
+    padding: 10px;
+}
+
+.bottom h3{
+    color: white;
+    font-weight: 500;
+}
+
+.btimg{
+    height: 80%;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.poster1{
+    height: 100%;
+    width: 15%;
+    background-image: url(https://media.gettyimages.com/id/1388348199/photo/female-model-in-elegant-suit.jpg?s=1024x1024&w=gi&k=20&c=Xh2puhrF3cCsV7K1XMzfILvKLjrzz16VkzyLKBm8U8o=);
+    background-size: cover;
+    background-position: top;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+   
+}
+
+/* .poster1:hover{
+    transform: scale(1.1);
+} */
+
+.poster1 button{
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.poster1 button:hover{
+    transform: scale(1.1);
+    background-color: black;
+    color: white;
+}
+
+.poster1 i{
+    margin-left: 30px;
+    font-size: 15px;
+}
+
+
+
+.poster2{
+    height: 100%;
+    width: 15%;
+    background-image: url(https://media.gettyimages.com/id/1146618382/photo/young-man-walks-along-promenade-with-shopping-bag-in-hand.jpg?s=1024x1024&w=gi&k=20&c=z9wugAaCUvfDC6YiFAo3pZs3el71PAafF-9wEAbtTRA=);
+    background-size: cover;
+    background-position: top;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+
+.poster2 button{
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.poster2 button:hover{
+    transform: scale(1.1);
+    background-color: black;
+    color: white;
+}
+
+.poster2 i{
+    margin-left: 30px;
+    font-size: 15px;
+}
+
+.poster3{
+    height: 100%;
+    width: 15%;
+    background-image: url(https://media.gettyimages.com/id/1160629449/photo/beautiful-woman-with-long-hair.jpg?s=1024x1024&w=gi&k=20&c=LFtc3CGcXWaD_gsVERkbBIIjxb8T1h17nOscpYgWIZw=);
+    background-size: cover;
+    background-position: top;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+
+.poster3 button{
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.poster3 button:hover{
+    transform: scale(1.1);
+    background-color: black;
+    color: white;
+}
+
+.poster3 i{
+    margin-left: 30px;
+    font-size: 15px;
+}
+
+.poster4{
+    height: 100%;
+    width: 15%;
+    background-image: url(https://media.gettyimages.com/id/851952358/photo/most-stylish-twosome.jpg?s=1024x1024&w=gi&k=20&c=drR-kJXqP6U8VWvgbXwSj6ksRq73TCi--C8nPWd5YJY=);
+    background-size: cover;
+    background-position: top;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+
+
+.poster4 button{
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.poster4 button:hover{
+    transform: scale(1.1);
+    background-color: black;
+    color: white;
+}
+
+.poster4 i{
+    margin-left: 30px;
+    font-size: 15px;
+}
